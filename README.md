@@ -1,4 +1,4 @@
-# Cafeteria Menu Crawler
+# Beready - Crawler
 
 학교 식단표를 자동으로 크롤링하고, 주간 식단을 정리하여 출력하는 Python 프로그램입니다.  
 향후에는 Excel 저장, GitHub 업로드, 보고서 작성 기능을 추가할 예정입니다.
