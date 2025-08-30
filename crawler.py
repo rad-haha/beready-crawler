@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
-"""
+/**
+크롤러 작성자: 안시은
 PKNU 라일락 주간식단표 크롤러 (requests + BeautifulSoup, 최종)
 - 목록(https://www.pknu.ac.kr/main/399)에서 최신 글 자동 진입
 - 상세 페이지 첫 라일락 주간 표에서 '중식' 5일치 파싱
 - SQLite: cafeteria.db / lilac_menu(day_text, menu)
-"""
+/*
 
 import re
 import sqlite3
