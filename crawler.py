@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+import re
+import sqlite3
+from typing import List, Tuple, Optional, Dict
+from urllib.parse import urljoin
+import requests
+from bs4 import BeautifulSoup, Tag
+
 /**
 크롤러 작성자: 안시은
 PKNU 라일락 주간식단표 크롤러 (requests + BeautifulSoup, 최종)
@@ -6,14 +13,6 @@ PKNU 라일락 주간식단표 크롤러 (requests + BeautifulSoup, 최종)
 - 상세 페이지 첫 라일락 주간 표에서 '중식' 5일치 파싱
 - SQLite: cafeteria.db / lilac_menu(day_text, menu)
 /*
-
-import re
-import sqlite3
-from typing import List, Tuple, Optional, Dict
-from urllib.parse import urljoin
-
-import requests
-from bs4 import BeautifulSoup, Tag
 
 LIST_URL = "https://www.pknu.ac.kr/main/399"
 DB_PATH  = "cafeteria.db"
